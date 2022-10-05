@@ -3,10 +3,8 @@ package com.course.market.persistence.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -30,4 +28,7 @@ public class Client {
 
     @Column(name = "correo_electronico")
     private String email;
+
+    @OneToMany(mappedBy = "client")
+    private List<Purchase> purchases;
 }

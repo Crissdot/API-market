@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -32,4 +33,12 @@ public class Product {
 
     @Column(name = "estado")
     private Boolean state;
+
+    @ManyToOne
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    private Category category;
+
+    // At the moment we don't need to retrieve all the purchases that have bought this product
+    // @OneToMany(mappedBy = "product")
+    // private List<PurchaseProduct> purchaseProducts;
 }
