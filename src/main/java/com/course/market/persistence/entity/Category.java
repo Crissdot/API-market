@@ -20,7 +20,7 @@ public class Category {
     private String description;
 
     @Column(name = "estado")
-    private Boolean state;
+    private Boolean status;
 
     @OneToMany(mappedBy = "category")
     private List<Product> products;

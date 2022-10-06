@@ -18,8 +18,8 @@ public class PurchaseProduct {
 
     private Double total;
 
-    @Column(name = "state")
-    private Boolean state;
+    @Column(name = "estado")
+    private Boolean status;
 
     @ManyToOne
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)

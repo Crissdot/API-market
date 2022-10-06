@@ -19,6 +19,6 @@ public class ProductRepository {
     }
 
     public Optional<List<Product>> getScarce (Integer quantity) {
-        return productCrudRepository.findByStockLessThanAndState(quantity, true);
+        return productCrudRepository.findByStockLessThanAndStatus(quantity, true);
     }
 }

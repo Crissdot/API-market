@@ -32,7 +32,7 @@ public class Product {
     private Integer stock;
 
     @Column(name = "estado")
-    private Boolean state;
+    private Boolean status;
 
     @ManyToOne
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
