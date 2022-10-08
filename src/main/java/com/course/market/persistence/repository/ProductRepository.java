@@ -16,6 +16,7 @@ import java.util.Optional;
 public class ProductRepository implements ProductRepositoryDomain {
     @Autowired
     private ProductCrudRepository productCrudRepository;
+    @Autowired
     private ProductMapper mapper;
 
     @Override
