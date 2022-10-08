@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Category {
+public class CategoryDomain {
     private Integer categoryId;
     private String category;
     private Boolean active;

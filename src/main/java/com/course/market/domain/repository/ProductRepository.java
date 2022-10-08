@@ -1,15 +1,15 @@
 package com.course.market.domain.repository;
 
-import com.course.market.domain.Product;
+import com.course.market.domain.ProductDomain;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface ProductRepository {
-    List<Product> getAll();
-    Optional<List<Product>> getByCategory(Integer categoryId);
-    Optional<List<Product>> getScarceProducts(Integer quantity);
-    Optional<Product> getProduct(Integer productId);
-    Product create(Product product);
+    List<ProductDomain> getAll();
+    Optional<List<ProductDomain>> getByCategory(Integer categoryId);
+    Optional<List<ProductDomain>> getScarceProducts(Integer quantity);
+    Optional<ProductDomain> getProduct(Integer productId);
+    ProductDomain create(ProductDomain product);
     void delete(Integer productId);
 }
