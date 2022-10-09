@@ -30,7 +30,7 @@ public class Purchase {
     private String comment;
 
     @Column(name = "estado")
-    private Boolean status;
+    private String status;
 
     @ManyToOne
     @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
