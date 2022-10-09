@@ -15,5 +15,5 @@ public class PurchaseDomain {
     private String paymentMethod;
     private String comment;
     private String status;
-    private List<PurchaseItemDomain> item;
+    private List<PurchaseItemDomain> items;
 }
